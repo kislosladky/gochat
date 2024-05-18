@@ -42,7 +42,7 @@ func main() {
 		fmt.Print("> ")
 		ip = strings.ToLower(ip)
 		if ip == "all" {             //ставлю broadcast адрес
-			ip = "255.255.255.255"
+			ip = "192.168.0.255"
 		}
 		message, msgErr := in.ReadString('\n')
 		if msgErr != nil {
